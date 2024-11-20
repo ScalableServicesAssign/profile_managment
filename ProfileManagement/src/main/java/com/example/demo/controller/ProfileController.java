@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.dto.LangLearnResponseDto;
 import com.example.demo.model.Profile;
 import com.example.demo.service.ProfileService;
 
@@ -41,4 +42,5 @@ public class ProfileController {
 	public void updateProfile(@RequestBody Profile obj1) {
 		profileService.updateProfile(obj1);
 	}
+	
 }

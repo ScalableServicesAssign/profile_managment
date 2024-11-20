@@ -15,6 +15,7 @@ public class ProfileService {
 	@Autowired
 	ProfileRepo profileRepo;
 	
+	
 	public List<Profile> getallProfiles(){
 		return profileRepo.findAll();
 	}
@@ -30,4 +31,6 @@ public class ProfileService {
 	public void updateProfile(Profile obj1) {
 		profileRepo.save(obj1);
 	}
+	
+	
 }
